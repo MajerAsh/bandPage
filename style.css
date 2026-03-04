@@ -1,4 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Metal+Mania&family=New+Rocker&family=Piedra&family=RocknRoll+One&family=Saira+Stencil+One&display=swap");
+
+@font-face {
+  font-family: "FT Vortex";
+  src:
+    url("fonts/FTVortexRegular.woff2") format("woff2"),
+    url("fonts/FTVortexRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: RocknRoll One; /* for our google font*/
+  color: rgb(112, 112, 112);
+}
+
+html,
+body {
+  margin: 0; /* overrides default margins/padding html sets*/
+  padding: 0;
+  background-color: rgb(226, 226, 226);
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 0.5px solid rgb(142, 150, 150);
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.nav a:hover {
+  background-color: rgba(186, 238, 238, 0.3);
+}
+
 .main-header {
-  background-image: url("public/blueBark.avif");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("public/birchbark.webp");
+  background-blend-mode: multiply; /*mixes img with "bg-color" (w/ .6 opacity)*/
   background-size: cover;
+  padding-bottom: 30px;
+}
+
+.band-name {
+  text-align: center;
+  margin: 0; /*h1 always have default margin*/
+  font-size: 4em;
+  font-family: FT Vortex;
+  color: rgb(242, 253, 253, 0.9);
+  font-weight: normal; /*h1 defaults to bold*/
+}
+
+.band-name-large {
+  font-size: 8em;
+  padding-top: 30px;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; /*top/bottom left/right*/
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: "black ops one";
+  font-weight: normal;
+  font-size: 3em;
+  color: #333;
+  text-align: center;
 }
