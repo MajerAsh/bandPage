@@ -44,8 +44,8 @@ body {
 
 .main-nav {
   text-align: center;
-  font-size: 1.1em;
-  font-weight: lighter;
+  font-size: 1.5em;
+  font-weight: bold;
   border-bottom: 0.5px solid rgb(142, 150, 150);
 }
 
@@ -67,7 +67,7 @@ body {
 
 .band-name {
   text-align: center;
-  margin: 0; /*h1 always have default margin*/
+  margin: 20px; /*h1 always have default margin*/
   font-size: 3.5em;
   font-family: FT Vortex;
   font-weight: normal; /*h1 defaults to bold*/
@@ -79,7 +79,7 @@ body {
   color: rgb(242, 253, 253, 0.9);
 }
 
-/*------------------ Content -----------------------*/
+/*------------------ (about) Content -----------------------*/
 
 .content-section {
   margin: 1em;
@@ -88,8 +88,10 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto; /*top/bottom left/right*/
+  margin-bottom: 1em;
   padding: 0 1.5em;
   font-size: 1.5em;
+  font-weight: lighter;
 }
 
 .section-header {
@@ -101,7 +103,7 @@ body {
 }
 
 .about-band-img {
-  float: left; /* --------- FLOAT*/
+  float: left; /*FLOAT*/
   height: 400px;
   width: 400px;
   margin: 20px;
@@ -109,7 +111,16 @@ body {
   border: solid rgb(48, 47, 47) 10px;
 }
 
-/*--------------------- Footer -----*/
+.about-band-img2 {
+  float: right; /*FLOAT*/
+  height: 400px;
+  width: 500px;
+  margin: 20px;
+  border-radius: 5%; /*how much to curve the edges of a element*/
+  border: solid rgb(48, 47, 47) 10px;
+}
+
+/*--------------------- Footer ---------------------------------------*/
 
 .main-footer {
   padding: 1em 0;
@@ -196,6 +207,26 @@ body {
   color: rgb(32, 110, 129);
 }
 
+.tour-btn {
+  background-color: rgb(168, 221, 235);
+  color: rgb(0, 8, 17);
+  border-right: solid 4px rgb(92, 137, 150);
+  border-bottom: solid 4px rgb(92, 137, 150);
+  border-radius: 10%;
+  border-left: none;
+  border-top: none;
+}
+
+.tour-btn:hover {
+  font-weight: bold;
+  background-color: rgb(32, 110, 129);
+  color: rgb(197, 233, 243);
+  border-left: solid 4px rgb(25, 57, 66);
+  border-top: solid 4px rgb(25, 57, 66);
+  border-right: none;
+  border-bottom: none;
+}
+
 /*----------- Tours -----*/
 
 .tour-row {
@@ -205,7 +236,7 @@ body {
   border-bottom: 1px solid rgb(32, 110, 129);
   padding-bottom: 25px;
   padding-top: 25px;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 .date {
