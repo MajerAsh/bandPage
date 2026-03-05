@@ -16,14 +16,14 @@
 * {
   box-sizing: border-box;
   font-family: RocknRoll One; /* for our google font*/
-  color: rgb(255, 255, 255);
+  color: rgb(235, 239, 241);
 }
 
 html,
 body {
   margin: 0; /* overrides default margins/padding html sets*/
   padding: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 11, 17);
 }
 
 /*----- header/ nav bar -----*/
@@ -54,7 +54,7 @@ body {
 }
 
 .nav a:hover {
-  background-color: rgba(186, 238, 238, 0.3);
+  background-color: rgba(186, 221, 238, 0.3);
 }
 
 .main-header {
@@ -96,7 +96,7 @@ body {
   font-family: "black ops one";
   font-weight: normal;
   font-size: 2em;
-  color: #3f4b52;
+  color: rgb(32, 110, 129);
   text-align: center;
 }
 
@@ -109,7 +109,7 @@ body {
   border: solid rgb(48, 47, 47) 10px;
 }
 
-/*----- Footer -----*/
+/*--------------------- Footer -----*/
 
 .main-footer {
   padding: 1em 0;
@@ -121,19 +121,93 @@ body {
 
 .main-footer-container {
   display: flex;
-  align-items: end;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.main-footer-container ul {
-  flex-grow: 1;
-  text-align: center;
+.main-footer-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.footer-nav li {
-  padding: 0 0.5em;
+.footer-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between
+  padding: 0;
+  list-style: none;
 }
 
 .footer-nav img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+}
+
+.footer-nav li {
+  margin: 20px;
+}
+
+/* ------------------------ HOME --------------*/
+
+/*----- Buttons -----*/
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em;
+  cursor: pointer;
+  color: #3f4b52;
+}
+
+.btn-header {
+  display: block;
+  margin: 0 auto 50px auto;
+  color: rgb(216, 234, 240);
+  border: 5px solid rgb(32, 110, 129);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0; /* remove all curve*/
+  font-size: 1em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, 0.411);
+}
+
+.btn-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto; /* goes to middle of screen. only block level elements can use auto, must set display: block; */
+  color: rgb(32, 110, 129);
+  font-size: 4em;
+  border-radius: 5000px;
+  padding: 0px; /* to override padding set under .btn which makes the border-radius a long oval/ not a circle*/
+  width: 100px; /* to avoid tall oval and create a circle*/
+  height: 100px; /* ^ " " " needed for a circle*/
+}
+
+.play {
+  padding-bottom: 8px;
+  color: rgb(32, 110, 129);
+}
+
+/*----------- Tours -----*/
+
+.tour-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 5em;
+  gap: 3em;
+  border-bottom: 1px solid rgb(32, 110, 129);
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: normal;
+}
+
+.date {
+  font-weight: bolder;
 }

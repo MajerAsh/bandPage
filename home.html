@@ -1,106 +1,134 @@
 <!doctype html>
 <html lang="en">
-  <head> <title>ELECTRIC ACORN | HOME</title>
-   <meta name="Electric Acorn Band Page" content="Punk Rock Psychodelic bluegrass metal squirrel band" />
+  <head>
+    <title>ELECTRIC ACORN | HOME</title>
+    <meta
+      name="Electric Acorn Band Page"
+      content="Punk Rock Psychodelic bluegrass metal squirrel band"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="main-header">
       <nav class="nav main-nav">
-          <ul>
-          <li><a href= "home.html">HOME</a></li>
-          <li><a href= "about.html">ABOUT</a></li>
-          <li><a href= "store.html">STORE</a></li>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="store.html">STORE</a></li>
         </ul>
       </nav>
-      
+
       <h1 class="band-name band-name-large">ELECTRIC ACORN</h1>
-      <button type="buttton">Send Money</button>
-      <br>
-      <br>
-      <!-- find background img-->
-      <button type="button">&#9653</button>
+      <div class="container">
+        <!-- already made responsive container properties with min-->
+        <button class="btn btn-header" type="buttton">
+          Listen to the Latest LP
+        </button>
+      </div>
+
+      <button class="btn btn-header btn-play" type="button">
+        <div class="play">&#9658;</div>
+      </button>
     </header>
-    <hr>
-     <section class="content-section container">
+    <!-- content ------------------------------------------------------------------------------------->
+    <section class="content-section container">
       <h2 class="section-header">TOURS</h2>
-      <div>
-       <div>
-        <strong>JULY 16</strong>
-        &lt;&gt;
-        <span>DETROIT, MI</span>
-        &lt;&gt;
-        <span>AMPATHEATER</span>
-        &lt;&gt;
-        <button type="button">GIVE MONEY</button>
-        <hr>
-      </div>
-      <div>
-       <div>
-        <strong>JULY 16</strong>
-        &lt;&gt;
-        <span>DETROIT, MI</span>
-        &lt;&gt;
-        <span>AMPATHEATER</span>
-        &lt;&gt;
-        <button type="button">GIVE MONEY</button>
-        <hr>
-      </div>
-      <div>
-        <strong>JULY 19</strong>
-        &lt;&gt;
-        <span>CHICAGO, IL</span>
-        &lt;&gt;
-        <span>THEATER</span>
-        &lt;&gt;
-        <button type="button">GIVE MONEY</button>
-        <hr>
-      </div>
-      <div>
-       <div>
-        <strong>JULY 21</strong>
-        &lt;&gt;
-        <span>ST PAUL, MN</span>
-        &lt;&gt;
-        <span>LOCATION</span>
-        &lt;&gt;
-        <button type="button">GIVE MONEY</button>
-        <hr>
-      </div>
-      <div>
-       <div>
-        <strong>JULY 23</strong>
-        &lt;&gt;
-        <span>CITY, ST</span>
-        &lt;&gt;
-        <span>PLACE</span>
-        &lt;&gt;
-        <button type="button">GIVE MONEY</button>
-      </div>
-    </section>
-  <footer class="main-footer">
-      <h3 class="band-name">ELECTRIC ACORN</h3>
-      <ul class="nav footer-nav">
-        <div class="flexcontainer">
-          <li>
-            <a href="https://www.youtube.com/watch?v=KMtEMOW9OQw" target="_blank">
-            <img src="public/youtube.svg" alt="youtube link" width="100" height="100" />
-            </a>
-          </li>
-          
-          <li>
-            <a href="https://open.spotify.com/album/0uMRU9BfPrSFSzBy1SwpdF" target="_blank">
-            <img src="public/spotify.svg" alt="Spotify Link" width="100" height="100" />
-            </a>
-          </li>
-          <li>
-             <a href="https://www.instagram.com/allsquirrels/" target="_blank">
-            <img src="public/ig.svg" alt="Instagram Link" width="100" height="100" />
-            </a>
-          </li>
-          
+      <section class="tours">
+        <div class="tour-row">
+          <div class="date">JULY 16</div>
+
+          <div class="city">DETROIT, MI</div>
+
+          <div class="venue">PLANTER'S STAGE</div>
+
+          <button class="btn" type="button">GET TICKETS</button>
         </div>
-      </ul>
+
+        <div class="tour-row">
+          <div class="date">JULY 17</div>
+
+          <div class="city">COLUMBUS, OH</div>
+
+          <div class="venue">AMPATHEATER</div>
+
+          <button class="btn" type="button">GET TICKETS</button>
+        </div>
+
+        <div class="tour-row">
+          <div class="date">JULY 19</div>
+
+          <div class="city">CHICAGO, IL</div>
+
+          <div class="venue">THEATER</div>
+
+          <button class="btn" type="button">GET TICKETS</button>
+        </div>
+
+        <div class="tour-row">
+          <div class="date">JULY 21</div>
+
+          <div class="city">ST PAUL, MN</div>
+
+          <div class="venue">THE BATTERY</div>
+
+          <button class="btn" type="button">GET TICKETS</button>
+        </div>
+
+        <div class="tour-row">
+          <div class="date">JULY 23</div>
+
+          <div class="city">MILWAUKEE, WI</div>
+
+          <div class="venue">THE RAVE</div>
+
+          <button class="btn" type="button">GET TICKETS</button>
+        </div>
+      </section>
+    </section>
+    <!-- FOOTER --------------------------------------------------------------->
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="band-name">ELECTRIC ACORN</h3>
+        <ul class="footer-nav">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=KMtEMOW9OQw"
+              target="_blank"
+            >
+              <img
+                src="public/youtube.svg"
+                alt="youtube link"
+                width="100"
+                height="100"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://open.spotify.com/album/0uMRU9BfPrSFSzBy1SwpdF"
+              target="_blank"
+            >
+              <img
+                src="public/spotify.svg"
+                alt="Spotify Link"
+                width="100"
+                height="100"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/allsquirrels/" target="_blank">
+              <img
+                src="public/ig.svg"
+                alt="Instagram Link"
+                width="100"
+                height="100"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
