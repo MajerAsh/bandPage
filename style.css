@@ -12,7 +12,7 @@
   font-display: swap;
 }
 
-/*----- all -----*/
+/*------------------------ all ----------------------------*/
 * {
   box-sizing: border-box;
   font-family: RocknRoll One; /* for our google font*/
@@ -26,7 +26,7 @@ body {
   background-color: rgb(0, 11, 17);
 }
 
-/*----- header/ nav bar -----*/
+/*----------------------------- header/ nav bar ------------------------------*/
 .nav ul {
   margin: 0;
 }
@@ -67,7 +67,7 @@ body {
 
 .band-name {
   text-align: center;
-  margin: 20px; /*h1 always have default margin*/
+  margin: 0; /*h1 always have default margin*/
   font-size: 3.5em;
   font-family: FT Vortex;
   font-weight: normal; /*h1 defaults to bold*/
@@ -75,6 +75,7 @@ body {
 
 .band-name-large {
   font-size: 8em;
+  margin: 20px;
   padding-top: 30px;
   color: rgb(242, 253, 253, 0.9);
 }
@@ -127,25 +128,19 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   background-image: url("public/birchbark.webp");
   background-blend-mode: multiply;
+  background-size: cover;
   margin-top: 3em;
 }
 
 .main-footer-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.main-footer-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .footer-nav {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  margin-left: 45px;
   padding: 0;
   list-style: none;
 }
