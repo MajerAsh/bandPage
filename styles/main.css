@@ -184,6 +184,22 @@ body {
 }
 
 @media (max-width: 640px) {
+  .band-name {
+    font-size: 2.5em;
+  }
+
+  .band-name-large {
+    font-size: 6em;
+  }
+
+  .container {
+    font-size: 1em;
+  }
+
+  .btn {
+    padding: auto;
+  }
+
   .main-footer-container {
     display: grid;
     grid-template-rows: 2;
