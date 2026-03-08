@@ -1,0 +1,16 @@
+.shop-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3em;
+}
+
+.shop-item {
+  display: grid;
+  grid-template-rows: 1fr 300px 1fr;
+  align-content: center;
+}
+
+shop-item-img {
+  background-image: url("../public/album4.webp");
+  background-size: cover;
+}
