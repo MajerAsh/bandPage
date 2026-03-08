@@ -103,6 +103,53 @@ body {
   text-align: center;
 }
 
+/*----- Buttons -----*/
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em;
+  cursor: pointer;
+  color: #3f4b52;
+}
+
+.btn-header {
+  display: block;
+  margin: 0 auto 50px auto;
+  color: rgb(216, 234, 240);
+  border: 5px solid rgb(32, 110, 129);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0; /* remove all curve*/
+  font-size: 1em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, 0.411);
+}
+
+.tour-btn {
+  background-color: rgb(168, 221, 235);
+  color: rgb(0, 8, 17);
+  border-right: solid 4px rgb(92, 137, 150);
+  border-bottom: solid 4px rgb(92, 137, 150);
+  border-radius: 10%;
+  border-left: none;
+  border-top: none;
+}
+
+.tour-btn:hover {
+  font-weight: bold;
+  background-color: rgb(32, 110, 129);
+  color: rgb(197, 233, 243);
+  border-left: solid 4px rgb(25, 57, 66);
+  border-top: solid 4px rgb(25, 57, 66);
+  border-right: none;
+  border-bottom: none;
+}
+
 /*--------------------- Footer ---------------------------------------*/
 
 .main-footer {
@@ -136,68 +183,14 @@ body {
   margin: 20px;
 }
 
-/*----- Buttons -----*/
+@media (max-width: 640px) {
+  .main-footer-container {
+    display: grid;
+    grid-template-rows: 2;
+  }
 
-.btn {
-  text-align: center;
-  vertical-align: middle;
-  padding: 0.67em;
-  cursor: pointer;
-  color: #3f4b52;
-}
-
-.btn-header {
-  display: block;
-  margin: 0 auto 50px auto;
-  color: rgb(216, 234, 240);
-  border: 5px solid rgb(32, 110, 129);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 0; /* remove all curve*/
-  font-size: 1em;
-  font-weight: lighter;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.btn-header:hover {
-  background-color: rgba(255, 255, 255, 0.411);
-}
-
-.btn-play {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 0 auto; /* goes to middle of screen. only block level elements can use auto, must set display: block; */
-  color: rgb(32, 110, 129);
-  font-size: 4em;
-  border-radius: 5000px;
-  padding: 0px; /* to override padding set under .btn which makes the border-radius a long oval/ not a circle*/
-  width: 100px; /* to avoid tall oval and create a circle*/
-  height: 100px; /* ^ " " " needed for a circle*/
-}
-
-.play {
-  padding-bottom: 8px;
-  color: rgb(32, 110, 129);
-}
-
-.tour-btn {
-  background-color: rgb(168, 221, 235);
-  color: rgb(0, 8, 17);
-  border-right: solid 4px rgb(92, 137, 150);
-  border-bottom: solid 4px rgb(92, 137, 150);
-  border-radius: 10%;
-  border-left: none;
-  border-top: none;
-}
-
-.tour-btn:hover {
-  font-weight: bold;
-  background-color: rgb(32, 110, 129);
-  color: rgb(197, 233, 243);
-  border-left: solid 4px rgb(25, 57, 66);
-  border-top: solid 4px rgb(25, 57, 66);
-  border-right: none;
-  border-bottom: none;
+  .footer-nav {
+    align-content: center;
+    justify-content: start;
+  }
 }
