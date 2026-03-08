@@ -103,24 +103,6 @@ body {
   text-align: center;
 }
 
-.about-band-img {
-  float: left; /*FLOAT*/
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-  border-radius: 5%; /*how much to curve the edges of a element*/
-  border: solid rgb(48, 47, 47) 10px;
-}
-
-.about-band-img2 {
-  float: right; /*FLOAT*/
-  height: 400px;
-  width: 500px;
-  margin: 20px;
-  border-radius: 5%; /*how much to curve the edges of a element*/
-  border: solid rgb(48, 47, 47) 10px;
-}
-
 /*--------------------- Footer ---------------------------------------*/
 
 .main-footer {
