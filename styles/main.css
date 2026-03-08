@@ -168,7 +168,6 @@ body {
 
 .footer-nav {
   display: flex;
-  flex-direction: row-reverse;
   margin-left: 45px;
   padding: 0;
   list-style: none;
@@ -205,10 +204,14 @@ body {
   .main-footer-container {
     display: grid;
     grid-template-rows: 2;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
   }
 
   .footer-nav {
-    align-content: center;
-    justify-content: start;
+    display: flex;
+    justify-items: start;
+    margin: 0;
   }
 }
