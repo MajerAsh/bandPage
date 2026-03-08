@@ -1,0 +1,19 @@
+/*----------- Tours -----*/
+
+.tour-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 5em;
+  gap: 3em;
+  border-bottom: 1px solid rgb(32, 110, 129);
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: lighter;
+}
+
+.date {
+  font-weight: bolder;
+}
+
+.tours {
+  margin-bottom: 5em;
+}
