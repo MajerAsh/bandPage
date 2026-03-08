@@ -80,7 +80,7 @@ body {
   color: rgb(242, 253, 253, 0.9);
 }
 
-/*------------------ Content (about) -----------------------*/
+/*------------------ Content / Container / Section -----------------------*/
 
 .container {
   max-width: 1000px;
@@ -135,8 +135,6 @@ body {
 .footer-nav li {
   margin: 20px;
 }
-
-/* ------------------------ HOME --------------*/
 
 /*----- Buttons -----*/
 
