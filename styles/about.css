@@ -15,3 +15,11 @@
   border-radius: 5%; /*how much to curve the edges of a element*/
   border: solid rgb(48, 47, 47) 10px;
 }
+
+@media (max-width: 640px) {
+  .about-band-img,
+  .about-band-img2 {
+    height: 200px;
+    width: 250px;
+  }
+}
