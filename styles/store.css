@@ -6,11 +6,24 @@
 
 .shop-item {
   display: grid;
-  grid-template-rows: 1fr 300px 1fr;
+  grid-template-rows: 1fr 250px 1fr;
+  row-gap: 1em;
   align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
-shop-item-img {
-  background-image: url("../public/album4.webp");
-  background-size: cover;
+.shop-item-title {
+  color: rgb(168, 221, 235);
+  border-bottom: 0.5px solid rgb(168, 221, 235);
+  font-weight: bold;
+}
+
+.shop-item-price {
+  font-size: 0.9em;
+  padding-right: 5px;
+}
+
+.shop-item-img {
+  border: 2px solid black;
 }
