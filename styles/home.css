@@ -1,0 +1,51 @@
+.tour-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 5em;
+  gap: 3em;
+  border-bottom: 1px solid rgb(32, 110, 129);
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: lighter;
+}
+
+.date {
+  font-weight: bolder;
+  color: rgb(211, 243, 252);
+}
+
+.tours {
+  margin-bottom: 5em;
+}
+
+/*--------------------------HOME BUTTONS---*/
+.btn-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto; /* goes to middle of screen. only block level elements can use auto, must set display: block; */
+  color: rgb(32, 110, 129);
+  font-size: 4em;
+  border-radius: 5000px;
+  padding: 0px; /* to override padding set under .btn which makes the border-radius a long oval/ not a circle*/
+  width: 100px; /* to avoid tall oval and create a circle*/
+  height: 100px; /* ^ " " " needed for a circle*/
+}
+
+.play {
+  padding-bottom: 8px;
+  color: rgb(32, 110, 129);
+}
+
+/* --------------------- Media --------*/
+
+@media (max-width: 640px) {
+  .tour-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .venue {
+    display: none;
+  }
+}
