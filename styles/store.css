@@ -16,6 +16,7 @@
   aspect-ratio: 1 / 1; /*forces every image box to be perfectly square*/
   object-fit: fill;
   justify-items: center;
+  margin-bottom: 1em;
 }
 
 .shop-item-title {
@@ -41,14 +42,10 @@
 }
 
 /* ---- btns ---- */
+
 .store-btn {
-  background-color: rgb(168, 221, 235);
-  color: rgb(0, 8, 17);
-  border-right: solid 4px rgb(92, 137, 150);
-  border-bottom: solid 4px rgb(92, 137, 150);
+  background-color: rgb(51, 86, 100);
   border-radius: 10%;
-  border-left: none;
-  border-top: none;
 }
 
 .btn-red-btn {
@@ -71,11 +68,11 @@
   font-size: 1em;
   background-color: rgb(107, 175, 202);
   color: white;
-  grid-area: purchase;
 }
 
-.btn-purchase:hover {
-  background-color: rgb(52, 86, 99);
+.btn-purchase:hover,
+.store-btn:hover {
+  background-color: rgb(25, 41, 48);
 }
 /* ---------------------- CART ---------------------*/
 .cart-header {
@@ -156,9 +153,9 @@
   .btn-red-btn::before {
     content: "X";
   }
-  .shop-item-details {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+
+  .store-btn::before {
+    content: "🛒";
   }
 }
 /*
